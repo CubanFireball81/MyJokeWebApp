@@ -8,6 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="dbup-sqlserver" />
+    <None Remove="Microsoft.SqlServer.Management.SqlParser" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.Extensions.Caching.SqlServer" />
+    <None Remove="Microsoft.SqlServer.SqlManagementObjects" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.SqlServer.SqlManagementObjects.SSMS" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
   </ItemGroup>
 
@@ -17,6 +26,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8" />
+    <PackageReference Include="dbup-sqlserver" Version="4.6.0" />
+    <PackageReference Include="Microsoft.SqlServer.Management.SqlParser" Version="160.22515.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="161.47027.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects.SSMS" Version="161.47027.0" />
   </ItemGroup>
 
 </Project>
