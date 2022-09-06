@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MyJokesWebApp.Models;
 
 namespace MyJokesWebApp.Data;
 
@@ -9,5 +10,6 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+    public DbSet<MyJokesWebApp.Models.Joke>? Joke { get; set; }
 }
 
